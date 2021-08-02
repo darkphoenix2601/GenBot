@@ -1,0 +1,84 @@
+{
+  "name": "Telegram Jarvis",
+  "description": "[Jarvis] Un userbot modular de Telegram que se ejecuta en Python 3.8+ con una base de datos sqlalchemy.",
+  "logo": "https://i.ibb.co/rfJ2KDL/Iron-Man-Jarvis-Wallpaper-Wallpaper-Download-33-jpg.jpg",
+  "keywords": [
+    "telegram",
+    "userbot",
+    "plugin",
+    "modular",
+    "productivity"
+  ],
+  "repository": "https://github.com/nmayorga78/Jarvis",
+  "website": "https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02",
+  "success_url": "https://t.me/redminote8es",
+  "stack": "container",
+  "env": {
+    "API_KEY": {
+      "description": "Obten este valor en my.telegram.org.",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Obten este valor en my.telegram.org.",
+      "required": true
+    },
+    "STRING_SESSION": {
+      "description": "Obten este valon corriendo [python3 string_session.py] en Termux o en el sistema local.",
+      "required": true
+    },
+    "HEROKU_MEMEZ": {
+      "description": "Esto debería ser True si el userbot se ejecuta en un Heroku Dyno.",
+      "value": "True",
+      "required": true
+    },
+    "HEROKU_API_KEY": {
+      "description": "Heroku API key, se obtiene en 'https://dashboard.heroku.com/account'",
+      "value": ""
+    },
+    "HEROKU_APP_NAME": {
+      "description": "Agregue el nombre de la aplicación Heroku aquí.",
+      "required": true
+    },
+    "BOTLOG": {
+      "description": "En caso de que desee desactivar el registro, ponga esto False",
+      "value": "False"
+    },
+    "BOTLOG_CHATID": {
+      "description": "ChatID del grupo de registro. Póngalo en '0' si BOTLOG = False y / o si LOGSPAMMER = False.",
+      "value": "0"
+    },
+    "CONSOLE_LOGGER_VERBOSE": {
+      "description": "If you need verbosity on the console logging",
+      "value": "False"
+    },
+    "PM_AUTO_BAN": {
+      "description": "Interruptor de función de prohibición automática de PM.",
+      "value": "True"
+    },
+    "CLEAN_WELCOME": {
+      "description": "Cuando se une una nueva persona, se elimina el mensaje de bienvenida anterior.",
+      "value": "True"
+    },
+    "ALIVE_NAME": {
+      "description": "Nombre para mostrar en el mensaje .alive.",
+      "required": false
+    },
+    "ALIVE_LOGO": {
+      "description": "Mostrar imagen / logotipo en mensaje .alive. Rellene el valor de la imagen de su imagen de enlace, use telegra.ph para obtener su propia imagen",
+      "value": "https://telegra.ph/file/cc66de9ee708316040177.jpg",
+      "required": false
+    },
+    "LOGSPAMMER": {
+      "description": "Set this to True in case you want the error logs to be stored in the userbot log group, instead of spitting out the file in the current chat, requires a valid BOTLOG_CHATID to be set.",
+      "value": "True"
+    }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql",
+      "options": {
+        "version": "12"
+      }
+    }
+  ]
+}
