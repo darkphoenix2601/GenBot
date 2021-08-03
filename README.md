@@ -23,7 +23,7 @@ Asegúrate de tener una cuenta de heroku y sigue todos los pasos necesarios.
 
 - Obten `API_ID` y `API_HASH` de [aqui](https://my.telegram.org/)
 
-<p align="left"><a href="https://heroku.com/deploy?template=https://github.com/nmayorga78/Jarvis/tree/sql-extended"> <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy to Heroku" /></a></p>
+<p align="left"><a href="https://heroku.com/deploy?template=https://github.com/vaibhavchandra13/GenBot"> <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy to Heroku" /></a></p>
 
 ## Creditos
  
